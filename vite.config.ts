@@ -12,5 +12,13 @@ export default defineConfig({
       }
     }
   },
+  build: {
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name][extname]',
+      }
+    }
+  },
   plugins: [vue()]
 })
