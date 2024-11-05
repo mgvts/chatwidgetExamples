@@ -23,15 +23,13 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: |
-          npm install
-          npm ci
+        run: npm install
 
-      - name: Build Library
-        run: npm run build
+      - name: Build
+        run: npm run dev:build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: examples/dist
+          folder: dist
           branch: gh-pages

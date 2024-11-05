@@ -1,17 +1,16 @@
-import {defineConfig} from "vite";
+import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
-    plugins: [vue(),
-        vueDevTools(),],
-    resolve: {
-    },
-    server: {
-        proxy: {
-            '/proxy': {
-                target: 'http://localhost:3000',
-            }
-        }
+  base: '/chat-widget/',
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000', // адрес вашего proxy сервера
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
     }
+  },
+  plugins: [vue()]
 })

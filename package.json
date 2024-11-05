@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "vite build",
     "example:dev": "vite",
     "server": "node server/index.js",
-    "dev": "concurrently \"npm run example:dev\" \"npm run server\"",
+    "dev": "vite",
+    "dev:build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
