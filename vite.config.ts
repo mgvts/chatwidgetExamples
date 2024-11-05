@@ -3,20 +3,13 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   base: '/chatwidgetExamples/',
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://mgvts.github.io/chatwidgetExamples/chat', 
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
-      }
-    }
-  },
   build: {
-    cssCodeSplit: true,
+    outDir: 'dist',
     rollupOptions: {
       output: {
-        assetFileNames: 'assets/[name][extname]',
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js'
       }
     }
   },
