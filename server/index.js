@@ -21,6 +21,13 @@ app.post('/chat', (req, res) => {
     });
 });
 
+app.get('/chat', (req, res) => {
+    res.json({
+        content: 'Hello, world!',
+        timestamp: new Date().toISOString(),
+    });
+});
+
 app.listen(port, () => {
     console.log(`Сервер запущен на http://localhost:${port}`);
 }); 

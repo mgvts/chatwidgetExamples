@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // адрес вашего proxy сервера
+        target: 'https://mgvts.github.io/chatwidgetExamples/chat', 
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
