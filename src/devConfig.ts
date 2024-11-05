@@ -34,9 +34,9 @@ export const config: ChatConfig = {
         headers: {
             'Content-Type': 'application/json',
         },
-        processRequest: (data) => ({
+        processRequest: (data: {message: string}) => ({
             message: data.message
         }),
-        processResponse: (response) => response
+        processResponse: (response: object) => response
     }
 }
