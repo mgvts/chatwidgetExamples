@@ -75,7 +75,7 @@ export const config: ChatConfig = {
     }
 }
 ```
-![radio example](radmeImg/image.png)
+![radio example](./radmeImg/image.png)
 ```json
 {
     "content": "Получено: checkbox",
@@ -88,7 +88,7 @@ export const config: ChatConfig = {
     }
 }
 ```
-![checkbox example](radmeImg/image-1.png)
+![checkbox example](./radmeImg/image-1.png)
 
 данные сохраняются в localStorage [chatHistory], поэтому при перезагрузке страницы история сообщений не пропадет
 
