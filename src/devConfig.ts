@@ -28,7 +28,8 @@ export const config: ChatConfig = {
         }
     },
     host: {
-        url: "/api",
+        url: "https://chatwidgetexampleserver.onrender.com/chat",
+        // url: "./api", // dev
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
