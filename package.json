@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "example:dev": "vite",
+    "server": "node server/index.js",
+    "dev": "concurrently \"npm run example:dev\" \"npm run server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,11 +13,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@mgvts/chat-widget": "^1.0.17",
+    "@mgvts/chat-widget": "^1.0.23",
     "@vitejs/plugin-vue": "^5.1.4",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "jsonrepair": "^3.9.0",
     "ts": "^0.2.2",
-    "vite": "^5.4.9"
+    "vite": "^5.4.9",
+    "vue": "^3.5.12"
   },
   "devDependencies": {
     "vite-plugin-vue-devtools": "^7.5.4"
