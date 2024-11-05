@@ -1,0 +1,23 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "example:dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mgvts/chat-widget": "^1.0.17",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "jsonrepair": "^3.9.0",
+    "ts": "^0.2.2",
+    "vite": "^5.4.9"
+  },
+  "devDependencies": {
+    "vite-plugin-vue-devtools": "^7.5.4"
+  }
+}
