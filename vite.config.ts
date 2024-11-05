@@ -13,5 +13,15 @@ export default defineConfig({
       }
     }
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://chatwidgetexampleserver.onrender.com/chat',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  },
   plugins: [vue()]
 })
