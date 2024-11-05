@@ -12,8 +12,8 @@ export const config: ChatConfig = {
         userMessageShow: (data: { message: string}) => {
             return data.message
         },
-        botMessageShow: (data: { message: string }) => {
-            return data.message
+        botMessageShow: (data: { content: string }) => {
+            return data.content
         },
         optionMessageShow: (data: {options: object}) => {
             const optionsMap = data.options
