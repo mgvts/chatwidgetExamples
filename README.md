@@ -90,5 +90,62 @@ export const config: ChatConfig = {
 ```
 ![checkbox example](./radmeImg/image-1.png)
 
-данные сохраняются в localStorage [chatHistory], поэтому при перезагрузке страницы история сообщений не пропадет
+data saves in localStorage [chatHistory], so when you reload the page, the history will not be lost
+
+
+styles are in [style.css](https://github.com/mgvts/chat-widget/blob/main/dist/style.css)
+and actually you can override them example 
+```vue
+<template>
+  <div>
+    <ChatWidget :config="config" class="chat-config">
+      <template v-slot:header>
+        <img :src="headerImg"
+             :style="{position: 'absolute',
+             top: '20px'
+             }" />
+        <div class="d-flex align-items-center justify-center w-100">
+          <div>
+            Hello in chat from slot header
+          </div>
+        </div>
+      </template>
+    </ChatWidget>
+  </div>
+</template>
+
+<style scoped>
+.chat-config {
+  --chat-z-index: 9999;
+
+  --chat-icon-bg: #FF0000;
+  --chat-icon-color: white;
+
+
+  --chat-header-height: 85px;
+  --chat-header-padding: 0 40px;
+  --chat-header-bg-color: white;
+
+  --chat-header-text-color: black;
+
+  --chat-font-family: "Sans Serif";
+
+  --chat-user-message-bg-color: white;
+  --chat-bot-message-bg-color: #e0e0e0;
+  --chat-messages-gap: 20px;
+
+
+  --chat-input-container-bg-color: #e0e0e0;
+  --chat-send-disabled-bg-color: #e0e0e0;
+  --chat-send-bg-color: #FF0000;
+
+  --chat-option-border-color: #FF0000;
+  --chat-option-hover-bg-color: #e0e0e0;
+  --chat-option-hover-border-color: #FF0000;
+  --chat-option-selected-bg-color: #FF0000;
+  --chat-option-selected-border-color: #FF0000;
+  --chat-option-selected-text-color: white;
+}
+</style>
+```
 
