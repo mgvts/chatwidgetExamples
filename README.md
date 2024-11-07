@@ -62,7 +62,7 @@ export const config: ChatConfig = {
 }
 ```
 
-примеры ответа от сервера:
+exampoles output from [server](https://github.com/mgvts/chatWidgetExampleServer):
 ```json
 {
     "content": "Получено: radio",
