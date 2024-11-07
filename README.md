@@ -1,6 +1,6 @@
 # Chat Widget Example
 
-## example to use [@mgvts/chat-widget](https://www.npmjs.com/package/@mgvts/chat-widget)
+## Example to use [@mgvts/chat-widget](https://www.npmjs.com/package/@mgvts/chat-widget)
 
 ### With Vue 3
 
@@ -15,8 +15,8 @@ import '@mgvts/chat-widget/dist/style.css'
   <ChatWidget :config="config" class="override-props" />
 </template>
 ```
-config is a [ChatConfig](https://github.com/mgvts/chat-widget/blob/main/src/types/ChatConfig.ts) object
-example of config is in [src/devConfig.ts](https://github.com/mgvts/chat-widget/blob/main/examples/src/devConfig.ts)
+Config is a [ChatConfig](https://github.com/mgvts/chat-widget/blob/main/src/types/ChatConfig.ts) object
+Example of config is in [src/devConfig.ts](https://github.com/mgvts/chat-widget/blob/main/examples/src/devConfig.ts)
 
 ```typescript
 import type { ChatConfig } from '@mgvts/chat-widget'
@@ -62,7 +62,7 @@ export const config: ChatConfig = {
 }
 ```
 
-exampoles output from [server](https://github.com/mgvts/chatWidgetExampleServer):
+Examples output from [server](https://github.com/mgvts/chatWidgetExampleServer):
 ```json
 {
     "content": "Получено: radio",
