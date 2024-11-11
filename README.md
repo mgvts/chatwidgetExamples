@@ -65,7 +65,7 @@ export const config: ChatConfig = {
 Examples output from [server](https://github.com/mgvts/chatWidgetExampleServer):
 ```json
 {
-    "content": "Получено: radio",
+    "content": "Recieved: radio",
     "timestamp": "2024-11-05T11:29:22.328Z",
     "options": {
         "radio": [
@@ -78,7 +78,7 @@ Examples output from [server](https://github.com/mgvts/chatWidgetExampleServer):
 ![radio example](./radmeImg/image.png)
 ```json
 {
-    "content": "Получено: checkbox",
+    "content": "Recieved: checkbox",
     "timestamp": "2024-11-05T11:29:33.297Z",
     "options": {
         "checkbox": [
